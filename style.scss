@@ -1,0 +1,107 @@
+@import "~bootstrap/scss/bootstrap.scss";
+
+body {
+  font-family: "Lato", sans-serif;
+  width: 100%;
+  box-sizing: content-box;
+  display: flex;
+  justify-content: center;
+
+}
+
+.container { // boot modifier
+  height: calc(100vh - 60px);
+}
+
+h1 { //boot modifier
+  font-size: 3em;
+  font-weight: 700;
+  color: white;
+}
+
+.col-10 { // boot modifier
+  transition: all ease 0.3s;
+}
+
+.top-buffer { // boot modifier
+  margin-top: 20px;
+}
+
+.tile__soda, .tile__alcool, .tile__chaud, .tile__cocktail, .tile h1 {
+  height: 20vh;
+  max-width: 500px;
+  max-height: 180px;
+}
+
+.tile__alcool {
+  background: url("assets/beer_s.png") no-repeat right -10px bottom -25px,
+    linear-gradient(291.51deg, #292929 -2.67%, #000000 108.64%);
+  background-size: 220px, 100%;
+}
+
+.tile__soda {
+  background: url("assets/soda_s.png") no-repeat right -10px bottom -10px,
+    linear-gradient(113.6deg, #0083b0 10.81%, #00b4db 91.35%);
+  background-size: 170px, 100%;
+}
+
+.tile__cocktail {
+  background: url("assets/cocktail_s.png") no-repeat right -10px bottom 0px,
+    linear-gradient(284.3deg, #e3f519 -1.69%, #739416 115.49%);
+  background-size: 140px, 100%;
+}
+
+.tile__chaud {
+  background: url("assets/chaud_s.png") no-repeat right -10px bottom 0px,
+    linear-gradient(113.15deg, #f12812 28.49%, #ffb618 101.3%);
+  background-size: 220px, 100%;
+}
+
+.navbar {
+  background: white;
+  padding: 0 20px;
+  height: 60px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.title {
+
+  height: 50px;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.details {
+  height: calc(80vh - 60px);
+}
+
+.unit {
+  padding: 0 20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+}
+
+.name {
+  font-weight: bold;
+  width: 180px;
+}
+
+.more {
+  width: 100%;
+  padding: 0 20px;
+}
+
+.price {
+  width: 58px;
+  text-align: center;
+}
+
+.ct .more {
+  margin-bottom: 20px;
+}
